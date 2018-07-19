@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+ height: 100%;
+ width: 100%;
+ font-size: 100%;
+ margin: 0;
+}
+
+body {
+	font-family: 'Alegreya Sans', sans-serif;
+	--blue: rgba(24,73,140);
+}
+
+/*Navbar styles */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+}
+
+
+#businessname {
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  text-shadow: 0.5px 0.3px black;
+  letter-spacing: 0.2em;
+}
+
+.navbar {
+	display: flex;
+	height: 3.125em;
+	align-items: center;
+  	padding: 0 10px;
+  	font-size: 1.125em;
+  	list-style: none;
+	font-family: 'Alegreya', serif;
+}
+
+.navbar li {
+	padding: 0.4em;
+}
+
+.navbar li a {
+	text-decoration: none;
+	color: black;
+}
+
+#header-img {
+	width: 3em;
+}
+
+/*Sections styling*/
+
+.section-content {
+	display: flex;
+	justify-content: space-between;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+}
+
+.image-box {
+	display: flex;
+	justify-content: center;
+ 	align-items: center;
+ 	flex-wrap: wrap;
+/* 	flex: 0 0;*/
+}
+
+#main {
+	background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.2)),url("yellow-whale.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+#about {
+	height: 100vh;
+	padding: 0 10%;
+	text-align: justify;
+	font-size: 1.1em;
+}
+
+#contact {
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+/*Other styling*/
+
+h1 {
+	color: var(--blue);
+	font-size: 4em;
+	border: 5px solid rgba(255,255,255, 0.45);
+	padding: 1em 0.8em;
+	background-color: rgba(255,255,255, 0.70);
+	font-family: 'Archivo Narrow', sans-serif;
+}
+
+.block {
+	height: 15.625em;
+	margin: 0 8px 8px 0;
+  	min-width: 30%%;
+}
+
+.hide {
+	display: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  color: black;
+  cursor: pointer;
+}
+
+.btn.active {
+  background-color: rgba(24,73,140, 0.9);
+  color: white;
+  border-radius: 5px;
+}
+
+#myBtnContainer {
+	margin: 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-top: 3.5em solid transparent;
+}
+
+.fab {
+	color: black;
+	padding-right: 20px;
+	border: 2px solid var(--blue);
+	padding: 0.6em;
+	border-radius: 5px;
+	margin-right: 0.4em;
+}
+
+.fab:hover {
+	background-color: var(--blue);
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.firstcolumn ul {
+	line-height: 2em;
+	font-size: 1.2em;
+	list-style: none;
+}
+
+.firstcolumn ul li .fas{
+	padding: 0.5em;
+}
+
+#map {
+	width: 35em;
+}
+
+#contactinfo {
+	padding: 15%;
+	line-height: 3em;
+}
+/*Media queries*/
+
+@media (max-width: 650px) {
+	.navbar {
+		display: row;
+		font-size: 1em;
+		justify-content: space-around;
+	}
+
+	#header-img {
+		display: none;
+	}
+
+	#businessname {
+		padding: 0;
+	}
+
+	#about {
+		font-size: 0.8em;
+	}
+
+	.penguin {
+		max-width: 400px;
+	}
+
+	.section-content {	
+		justify-content: center;
+	}
+
+	#contact {
+		flex-direction: column;
+		vertical-align: center;
+		justify-content: space-around;
+	}
+
+	.firstcolumn img {
+		display: none;
+	}
+
+}
