@@ -1,5 +1,7 @@
+$(window).on('resize',function(){location.reload();});
 
-filterSelection("highlights") // Execute the function and the highlights section
+filterSelection("highlights")
+ // Execute the function and the highlights section
 function filterSelection(c) {
   var x, i;
   x = document.getElementsByClassName("block");
@@ -9,7 +11,13 @@ function filterSelection(c) {
     addClass(x[i], "hide");
     if (x[i].className.indexOf(c) > -1) removeClass(x[i], "hide");
   }
+  //Trigger Masonry layout
+  $('.image-gallery').masonry({
+  itemSelector: '.image-box',
+  fitWidth: true,
+});
 }
+
 
 function addClass(element, name) {
   var i, arr1, arr2;
@@ -47,4 +55,17 @@ for (var i = 0; i < btns.length; i++) {
 }
 
 
+//The navbar becomes solid when the user scrolls
 
+$(window).scroll(function() {
+          // checks if window is scrolled more than 100px, adds/removes solid class and adds/removes hide class from navbar
+          if($(this).scrollTop() > 100) { 
+              $('.navbar').addClass('solid');
+              $("#businessname").removeClass('hide');
+            
+          } else {
+              $('.navbar').removeClass('solid');
+              $("#businessname").addClass('hide');
+          }
+
+        });

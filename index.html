@@ -4,7 +4,6 @@
 	<title>Michele Pala</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Alegreya+Sans" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Chela+One" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -16,11 +15,17 @@
 	<header id="header">
 <nav id="nav-bar">
 	<ul class="navbar">
-		<li><a class="nav-link" href="#"><img id="header-img" src="images/watercolours/yellow-whale.jpg" alt="Logo Image"></a></li>
-		<li id="businessname"><strong><a class="nav-link" href="#">Michele Pala</a></strong></li>
-		<li><a class="nav-link" href="#myBtnContainer">Portfolio</a></li>
-		<li><a class="nav-link" href="#about">About</a></li>
-		<li><a class="nav-link" href="#contact">Contact</a></li>
+        <!--Check with Michele about this logo, probably change image-->
+<!-- 		<li><a class="nav-link" href="#"><img id="header-img" src="images/watercolours/yellow-whale.jpg" alt="Logo Image"></a></li> -->
+		<div id="navbar-left">
+			<li id="businessname"><strong><a class="nav-link" href="#">Michele Pala</a></strong></li>
+		</div>
+		<div id="navbar-right">
+			<li><a class="nav-link" href="#">Home</a></li>
+			<li><a class="nav-link" href="#myBtnContainer">Portfolio</a></li>
+			<li><a class="nav-link" href="#about">About</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+		</div>
 	</ul>
 </nav>
 </header>
@@ -37,7 +42,7 @@
 	<button class="btn" onclick="filterSelection('illustrations')">Illustrations</button>
 	<button class="btn" onclick="filterSelection('drawings')">Drawings</button>
 </div>
-<div class="section-content">
+<div class="section-content image-gallery">
 	<!--Highlights-->
 	<a class="image-box" href="images/paintings/goldfinch.jpg" data-lightbox="highlights" data-title="Goldfinch">
 		<img class="block highlights" src="images/paintings/goldfinch.jpg" alt="Goldfinch"></img>
@@ -48,19 +53,19 @@
 	<a class="image-box" href="images/paintings/seagull.jpg" data-lightbox="highlights" data-title="Seagull">
 		<img class="block highlights" src="images/paintings/seagull.jpg" alt="Seagull"></img>
 	</a>
-		<a class="image-box" href="images/watercolours/hampstead" data-lightbox="highlights" data-title="Hampstead">
+		<a class="image-box" href="images/watercolours/hampstead.jpg" data-lightbox="highlights" data-title="Hampstead">
 		<img class="block highlights" src="images/watercolours/hampstead.jpg" alt="Hampstead"></img>
 	</a>
 	<a class="image-box" href="images/watercolours/seapuffin.jpg" data-lightbox="highlights" data-title="Sea Puffin">
 		<img class="block highlights" src="images/watercolours/seapuffin.jpg" alt="Sea Puffin"></img>
 	</a>
-	<a class="image-box" href="images/watercolours/killereye" data-lightbox="highlights" data-title="Killer Eye">
+	<a class="image-box" href="images/watercolours/killereye.jpg" data-lightbox="highlights" data-title="Killer Eye">
 		<img class="block highlights highlights" src="images/watercolours/killereye.jpg" alt="Killer Eye"></img>
 	</a>
-	<a class="image-box" href="images/illustrations/bilbo at the lonely mountain" data-lightbox="highlights" data-title="Bilbo at the lonely mountain">
+	<a class="image-box" href="images/illustrations/bilbo at the lonely mountain.jpg" data-lightbox="highlights" data-title="Bilbo at the lonely mountain">
 		<img class="block highlights" src="images/illustrations/bilbo at the lonely mountain.jpg" alt="bilbo at the lonely mountain"></img>
 	</a>
-		<a class="image-box" href="images/illustrations/littleDragon.jpg" data-lightbox="highlights" data-title="Little Dragon">
+		<a class="image-box" href="iimages/illustrations/littleDragon.jpg" data-lightbox="highlights" data-title="Little Dragon">
 		<img class="block highlights" src="images/illustrations/littleDragon.jpg" alt="littleDragon"></img>
 	</a>
 	<a class="image-box" href="images/illustrations/Matt.jpg" data-lightbox="highlights" data-title="Matt">
@@ -94,7 +99,7 @@
 	<a class="image-box" href="images/paintings/basthet.jpg" data-lightbox="paintings" data-title="Basthet">
 		<img class="block paintings" src="images/paintings/basthet.jpg" alt="Basthet"></img>
 	</a>
-	<a class="image-box" href="iimages/paintings/blackbird.jpg" data-lightbox="paintings" data-title="Blackbird">
+	<a class="image-box" href="images/paintings/blackbird.jpg" data-lightbox="paintings" data-title="Blackbird">
 		<img class="block paintings" src="images/paintings/blackbird.jpg" alt="Blackbird"></img>
 	</a>
 	<a class="image-box" href="images/paintings/loris in blue.jpg" data-lightbox="paintings" data-title="Loris in Blue">
@@ -136,7 +141,7 @@
 	<a class="image-box" href="images/paintings/Mater Mediterranea.jpg" data-lightbox="paintings" data-title="Mater Mediterranea">
 		<img class="block paintings" src="images/paintings/Mater Mediterranea.jpg" alt="Mater Mediterranea"></img>
 	</a>
-	<a class="image-box" href="images/paintings/genesis" data-lightbox="paintings" data-title="Genesis">
+	<a class="image-box" href="images/paintings/genesis.jpg" data-lightbox="paintings" data-title="Genesis">
 		<img class="block paintings" src="images/paintings/genesis.jpg" alt="Genesis"></img>
 	</a>
 	<!--Watercolours-->
@@ -156,7 +161,7 @@
 		<img class="block watercolours" src="images/watercolours/northerngannet.jpg" alt="northerngannet"></img>
 	</a>
 	<a class="image-box" href="images/watercolours/killereye.jpg" data-lightbox="watercolours" data-title="Killer Eye">
-		<img class="block watercolours" src="images/watercolours/killereye.jpg" alt="Killer Eye"></img>
+		<img class="block watercolours highlights" src="images/watercolours/killereye.jpg" alt="Killer Eye"></img>
 	</a>
 	<a class="image-box" href="images/watercolours/killerwhale.jpg" data-lightbox="watercolours" data-title="Killer Whale">
 		<img class="block watercolours" src="images/watercolours/killerwhale.jpg" alt="Killer Whale"></img>
@@ -244,7 +249,7 @@
 	<a class="image-box" href="images/drawings/column angel.jpg" data-lightbox="drawings" data-title="Column Angel">
 		<img class="block drawings" src="images/drawings/column angel.jpg" alt="column angel"></img>
 	</a>
-	<a class="image-box" href="images/drawings/dragonskull.jpg" data-lightbox="drawings" data-title="Dragon Skull">
+	<a class="image-box" href="images/drawings/dragonskull.jp" data-lightbox="drawings" data-title="Dragon Skull">
 		<img class="block drawings" src="images/drawings/dragonskull.jpg" alt="dragonskull"></img>
 	</a>
 	<a class="image-box" href="images/drawings/erato.jpg" data-lightbox="drawings" data-title="Erato">
@@ -300,7 +305,7 @@ At the end of a couples of troubled years, well soaked in the Venetian humidity,
 			<li><i class="fas fa-pencil-alt"></i>Purchase my original art</li>
 			<li><i class="fas fa-pencil-alt"></i>Request commissioned art</li>
 			<li><i class="fas fa-pencil-alt"></i>Make an appointment at my studio</li>
-			<li><i class="fas fa-pencil-alt"></i>Chat about nerd stuff</li>
+			<li><i class="fas fa-pencil-alt"></i>Have a chat in Italian</li>
 		</ul>
 		<div id="contactinfo">
 			<h2>Email: </h2>
@@ -308,14 +313,17 @@ At the end of a couples of troubled years, well soaked in the Venetian humidity,
 			<a href="https://www.etsy.com/people/mikelpala" target="_blank"><i class="fab fa-etsy fa-2x"></i></a>
 			<a href="https://www.instagram.com/mikelpala/" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
 		</div>
+
 	</div>
-		<div id="location" class="firstcolumn">
+		<div id="location" zclass="firstcolumn">
 			<h2>Location: </h2>
 			<p>Angel Islington N1, London, United Kingdom</p>
 			<img id="map" src="images/snazzy-image.png">
 	</div>
+
 </section>
 </body>
 <script src="js/lightbox.js"></script>
+<script src="js/masonry.pkgd.min.js"></script>
 <script src="js/script.js"></script>
 </html>

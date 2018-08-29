@@ -23,12 +23,11 @@ nav {
   left: 0;
   margin: auto;
   width: 100%;
+  z-index: 1;
 }
 
 
 #businessname {
-  margin-left: auto;
-  margin-right: auto;
   text-transform: uppercase;
   text-shadow: 0.5px 0.3px black;
   letter-spacing: 0.2em;
@@ -36,12 +35,16 @@ nav {
 
 .navbar {
 	display: flex;
-	height: 3.125em;
-	align-items: center;
+	height: 3em;
+	justify-content: space-between;
   	padding: 0 10px;
   	font-size: 1.125em;
   	list-style: none;
 	font-family: 'Alegreya', serif;
+}
+
+#navbar-right {
+	display: flex;
 }
 
 .navbar li {
@@ -53,9 +56,10 @@ nav {
 	color: black;
 }
 
-#header-img {
-	width: 3em;
+.solid {
+	background-color: rgba(53,185,217,0.6);
 }
+
 
 /*Sections styling*/
 
@@ -66,12 +70,23 @@ nav {
  	flex-wrap: wrap;
 }
 
+.image-gallery {
+	width: 90%;
+	max-width: 95%;
+	margin: 0 auto;
+}
+
 .image-box {
-	display: flex;
-	justify-content: center;
- 	align-items: center;
- 	flex-wrap: wrap;
-/* 	flex: 0 0;*/
+	width: 25%;
+}
+
+.block {
+	width: 96%;
+	margin: 2%;
+}
+
+.hide {
+	display: none;
 }
 
 #main {
@@ -94,7 +109,7 @@ nav {
 #contact {
 	height: 100vh;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
 }
 
@@ -109,15 +124,6 @@ h1 {
 	font-family: 'Archivo Narrow', sans-serif;
 }
 
-.block {
-	height: 15.625em;
-	margin: 0 8px 8px 0;
-  	min-width: 30%%;
-}
-
-.hide {
-	display: none;
-}
 
 .btn {
   border: none;
@@ -144,10 +150,10 @@ h1 {
 .fab {
 	color: black;
 	padding-right: 20px;
-	border: 2px solid var(--blue);
-	padding: 0.6em;
+	padding: 0.5em;
 	border-radius: 5px;
 	margin-right: 0.4em;
+	background-color: rgba(53,185,217,0.3);
 }
 
 .fab:hover {
@@ -185,14 +191,13 @@ a {
 		display: row;
 		font-size: 1em;
 		justify-content: space-around;
-	}
-
-	#header-img {
-		display: none;
+		vertical-align: center;
 	}
 
 	#businessname {
-		padding: 0;
+	margin-top: 5%;
+	font-size: 0.65em;
+
 	}
 
 	#about {
@@ -208,13 +213,13 @@ a {
 	}
 
 	#contact {
-		flex-direction: column;
+		flex-direction: row;
 		vertical-align: center;
 		justify-content: space-around;
 	}
 
-	.firstcolumn img {
-		display: none;
+	#map {
+		max-width: 320px;
 	}
 
 }
