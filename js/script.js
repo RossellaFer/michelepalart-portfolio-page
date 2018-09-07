@@ -1,5 +1,3 @@
-$(window).on('resize',function(){location.reload();});
-
 filterSelection("highlights")
  // Execute the function and the highlights section
 function filterSelection(c) {
