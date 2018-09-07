@@ -35,7 +35,7 @@ nav {
 
 .navbar {
 	display: flex;
-	height: 3em;
+	height: 2.5em;
 	justify-content: space-between;
   	padding: 0 10px;
   	font-size: 1.125em;
@@ -57,7 +57,7 @@ nav {
 }
 
 .solid {
-	background-color: rgba(53,185,217,0.6);
+	background-color: rgba(53,185,217);
 }
 
 
@@ -71,13 +71,13 @@ nav {
 }
 
 .image-gallery {
-	width: 90%;
+	width: 10em;
 	max-width: 95%;
 	margin: 0 auto;
 }
 
 .image-box {
-	width: 25%;
+	width: 18em;
 }
 
 .block {
@@ -150,7 +150,7 @@ h1 {
 .fab {
 	color: black;
 	padding-right: 20px;
-	padding: 0.5em;
+	padding: 0.4em;
 	border-radius: 5px;
 	margin-right: 0.4em;
 	background-color: rgba(53,185,217,0.3);
@@ -181,8 +181,21 @@ a {
 }
 
 #contactinfo {
-	padding: 15%;
 	line-height: 3em;
+    width: 100%;
+}
+
+#contactinfo p {
+    padding: 5% 0;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+#contactinfo p a:hover {
+    color: var(--blue);
+    font-weight: 700;
+    transition: all .2s ease-in-out;
+    transform: scale(1.5) 2s;
 }
 /*Media queries*/
 
@@ -192,16 +205,17 @@ a {
 		font-size: 1em;
 		justify-content: space-around;
 		vertical-align: center;
+        height: 3em;
 	}
 
 	#businessname {
 	margin-top: 5%;
 	font-size: 0.65em;
-
 	}
 
 	#about {
 		font-size: 0.8em;
+        padding-top: 10%;
 	}
 
 	.penguin {
@@ -216,6 +230,7 @@ a {
 		flex-direction: row;
 		vertical-align: center;
 		justify-content: space-around;
+        padding-top: 15%;
 	}
 
 	#map {
