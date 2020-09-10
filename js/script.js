@@ -10,10 +10,13 @@ function filterSelection(c) {
     if (x[i].className.indexOf(c) > -1) removeClass(x[i], "hide");
   }
   //Trigger Masonry layout
-  $('.image-gallery').masonry({
-  itemSelector: '.image-box',
-  fitWidth: true,
-});
+  const $grid = $('.image-gallery').masonry({
+    itemSelector: '.image-box',
+    fitWidth: true,
+  });
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
 }
 
 
@@ -42,7 +45,7 @@ function removeClass(element, name) {
 }
 
 //Change color of the button according to the active class
-var btnContainer = document.getElementById("myBtnContainer");
+var btnContainer = document.getElementById("portfolio-selection");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
